@@ -1,0 +1,14 @@
+#htaccess file
+<files .htaccess>
+order allow,deny
+deny from all
+ErrorDocument 404 /404.html
+DirectoryIndex index.html
+Options All -Indexes
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{QUERY_STRING} (<|%3C).*script malveillant.*(>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} GLOBALS(=|[|%[0-9A-Z]{0,2}) [OR]
+RewriteCond %{QUERY_STRING} _REQUEST(=|[|%[0-9A-Z]{0,2})
+RewriteRule ^(.*)$ index.php [F,L]
+</files>

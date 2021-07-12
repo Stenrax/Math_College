@@ -1,0 +1,3 @@
+	<!-- (Couleur pour chaque niveau ? -->
+	<!-- Barre de progression éventuellement ? Quid cookie pour leveler => Bulle verte qui monte vers le portrait => Portrait pour aller a la page profil  (coin haut droit)? -->
+	<!-- Ajouter des cartes autocorrective informatique pour reviser -->
